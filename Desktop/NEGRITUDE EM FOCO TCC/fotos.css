@@ -1,38 +1,159 @@
+.acervo {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+* {/*gruda a barra nos cantos*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    top: 1px;    /* Alinha no topo */
+    left: 10px; /* Alinha na direita */
+    width: 100px;/* Define uma largura fixa  */
+    height: 100px;/* Define uma altura fixa  */
+    border-radius: 50%;
+    object-fit: cover; /* a imagem mantém a proporção original e corta as partes*/  
+}
+.imglogo{
+    background-position: center;
+    height: 600px;   
+    width: 600px;
+
+}
+
+.fundo{
+    background-image: url(fundov.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #f7fb1c;
+    font-size: 30px;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-attachment: fixed;
+
+}
+
+.logo {
+    position: absolute;
+    top: 5px;    /* Alinha no topo */
+    left: 10px; /* Alinha na direita */
+    width: 100px;/* Define uma largura fixa  */
+    height: 100px;/* Define uma altura fixa  */
+    border-radius: 50%;
+    object-fit: cover; /* a imagem mantém a proporção original e corta as partes*/  
+}
+
+
+.botoes a {   /* Ele vai usar especificamente a tag <a> */
+    /* Transforma o link em um bloco para aceitar padding e margens */
+    display: inline-block; 
+    /* Estilo visual */
+    background-color: #004a99; /* Cor do botao */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    border-radius: 4px;
+    font-family: "Staatliches", sans-serif;
+    align-items: center;
+
+    
+}
 .navbar{ 
     background-image: url(fundo.png); /*cria a barra no inicio*/
-    height: 60px;
-    width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
     z-index: 1000;
-
 }
 
-.acervo{
-    width: 90%;
-    margin: 50px auto;
-}
-
-.acervo h2{
+.acervo h2 {
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #006b5b;
 }
 
-.galeria{
+.galeria {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-.galeria img{
+.card {
+    position: relative;
     width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: 0.3s;
+    height: 260px;
+    overflow: hidden;
     cursor: pointer;
+    border-radius: 10px;
+    background-color: #f5f5f5;
 }
 
-.galeria img:hover{
-    transform: scale(1.05);
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.4s ease;
 }
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    color: white;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        transparent
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.overlay p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
