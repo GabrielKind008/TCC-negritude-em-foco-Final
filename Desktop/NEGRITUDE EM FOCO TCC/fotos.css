@@ -2,11 +2,26 @@
     width: 90%;
     max-width: 1200px;
     margin: 80px auto;
+
 }
 * {/*gruda a barra nos cantos*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h2{
+    font-family: "Open Sans", sans-serif; /* Define a fonte */
+    color: #333; /* Cor do texto */
+}
+
+hr {
+    border: none;
+    height: 5px;                 /*define a altura*/
+    width: 700px;            /* Define a largura  */
+    background-color: #a8a8a9; /* cor da barra */
+    border-radius: 2px;     /* Bordas arredondadas */
+    margin: 15px auto;      /* Centraliza na tela */
 }
 
 .logo {
@@ -141,6 +156,42 @@
 .overlay p {
     margin: 5px 0 0;
     font-size: 16px;
+}
+
+footer {
+    background-color: #1e1b19; /*cria a barra no inicio*/
+    bottom: 0;       /* posiciona o elemento no fundo da janela */
+    left: 0;         /* encosta o elemento na lateral esquerda */
+    width: 100%;     /* faz a barra ocupar toda a largura da tela */
+    height: 60px;    /* define a altura da barra */
+    display: flex;            /* ativa flexbox para organizar o conteúdo */
+    justify-content: center;    /* centraliza na horizontal */
+    align-items: center;        /* centraliza na vertical */
+
+
+}
+
+.redessoci a {
+
+    /* Transforma o link em um bloco para aceitar padding e margens */
+        display: inline-block; 
+    /* Estilo visual */
+    background: linear-gradient(/*deixa um degrade de cores */
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+      );
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    border-radius: 4px;
+    font-family: "Staatliches", sans-serif;
+    align-items: center;
+
 }
 
 /* Tablet */

@@ -126,7 +126,7 @@ p {
 
 .fotomestre{
     position: absolute;
-    top: 1070px;   /* Distância do topo */
+    top: 1220px;   /* Distância do topo */
     left: 60px;  /* Distância da esquerda */
     width: 300px;  /* Define a largura */
     height: auto;  /* Mantém a proporção correta para nao amassar */
