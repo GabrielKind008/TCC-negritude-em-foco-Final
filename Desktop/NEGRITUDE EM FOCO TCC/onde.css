@@ -196,3 +196,7 @@ footer {
 h1{
     font-family: "Staatliches", sans-serif;
 }
+
+p{
+    padding: 10px 150px;
+}
