@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f7f3e8;
+    background-image:
+    linear-gradient(30deg, rgba(0, 91, 70, 0.04) 12%, transparent 12.5%, transparent 87%, rgba(0, 91, 70, 0.04) 87.5%, rgba(0, 91, 70, 0.04)),
+    linear-gradient(150deg, rgba(232, 181, 35, 0.04) 12%, transparent 12.5%, transparent 87%, rgba(232, 181, 35, 0.04) 87.5%, rgba(232, 181, 35, 0.04));
+    background-size: 80px 80px;
+    color: white;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: #f5b82e;
+    color: #003d32;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+/* ÁREA PRINCIPAL */
+
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* CARROSSEL */
+
+.carrossel {
+    width: 90%;
+    max-width: 1000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+/* CARTÃO */
+
+.conteudo {
+    width: 800px;
+    min-height: 400px;
+
+    background-color: #075847;
+
+    border: 3px solid #f5b82e;
+    border-radius: 15px;
+
+    display: flex;
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* IMAGEM */
+
+.conteudo img {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* INFORMAÇÕES */
+
+.informacoes {
+    width: 50%;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacoes span {
+    color: #f5b82e;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.informacoes h2 {
+    margin: 15px 0;
+
+    font-size: 32px;
+}
+
+.informacoes p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* BOTÕES */
+
+.botao {
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #f5b82e;
+    color: #003d32;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+}
+
+/* INDICADORES */
+
+.indicadores {
+    margin-top: 25px;
+}
+
+.ponto {
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+
+    margin: 5px;
+
+    border-radius: 50%;
+
+    background-color: #777;
+}
+
+.ponto.ativo {
+    background-color: #f5b82e;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .conteudo {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .conteudo img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .informacoes {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .informacoes span {
+        font-size: 30px;
+    }
+
+    .informacoes h2 {
+        font-size: 25px;
+    }
+
+    .informacoes p {
+        font-size: 16px;
+    }
+
+}  
+.botoes a {   /* Ele vai usar especificamente a tag <a> */
+    /* Transforma o link em um bloco para aceitar padding e margens */
+    display: inline-block; 
+    /* Estilo visual */
+    background-color: #004a99; /* Cor do botao */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    border-radius: 4px;
+    font-family: "Staatliches", sans-serif;
+    align-items: center;
+
+    
+} 
+
+.navbar{ 
+    background-image: url(fundo.png); /*cria a barra no inicio*/
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;    /* Alinha no topo */
+    left: 10px; /* Alinha na direita */
+    width: 100px;/* Define uma largura fixa  */
+    height: 100px;/* Define uma altura fixa  */
+    border-radius: 50%;
+    object-fit: cover; /* a imagem mantém a proporção original e corta as partes*/  
+}
+

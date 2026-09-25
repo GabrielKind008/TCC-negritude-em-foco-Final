@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    background-color: #f7f3e8;
+    background-image:
+        linear-gradient(30deg, rgba(0, 91, 70, 0.04) 12%, transparent 12.5%, transparent 87%, rgba(0, 91, 70, 0.04) 87.5%, rgba(0, 91, 70, 0.04)),
+        linear-gradient(150deg, rgba(232, 181, 35, 0.04) 12%, transparent 12.5%, transparent 87%, rgba(232, 181, 35, 0.04) 87.5%, rgba(232, 181, 35, 0.04));
+    background-size: 80px 80px;
+}
+
+
+
+
+
+.acervo {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+
+}   
+* {/*gruda a barra nos cantos*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-family: "Open Sans", sans-serif; /* Define a fonte */
+    color: #333; /* Cor do texto */
+}
+
+hr {
+    border: none;
+    height: 5px;                 /*define a altura*/
+    width: 700px;            /* Define a largura  */
+    background-color: #a8a8a9; /* cor da barra */
+    border-radius: 2px;     /* Bordas arredondadas */
+    margin: 15px auto;      /* Centraliza na tela */
+}
+
+.logo {
+    position: absolute;
+    top: 1px;    /* Alinha no topo */
+    left: 10px; /* Alinha na direita */
+    width: 100px;/* Define uma largura fixa  */
+    height: 100px;/* Define uma altura fixa  */
+    border-radius: 50%;
+    object-fit: cover; /* a imagem mantém a proporção original e corta as partes*/  
+}
+.imglogo{
+    background-position: center;
+    height: 600px;   
+    width: 600px;
+
+}
+
+.fundo{
+    background-image: url(fundov.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #f7fb1c;
+    font-size: 30px;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-attachment: fixed;
+
+}
+
+.logo {
+    position: absolute;
+    top: 5px;    /* Alinha no topo */
+    left: 10px; /* Alinha na direita */
+    width: 100px;/* Define uma largura fixa  */
+    height: 100px;/* Define uma altura fixa  */
+    border-radius: 50%;
+    object-fit: cover; /* a imagem mantém a proporção original e corta as partes*/  
+}
+
+
+.botoes a {   /* Ele vai usar especificamente a tag <a> */
+    /* Transforma o link em um bloco para aceitar padding e margens */
+    display: inline-block; 
+    /* Estilo visual */
+    background-color: #004a99; /* Cor do botao */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    border-radius: 4px;
+    font-family: "Staatliches", sans-serif;
+    align-items: center;
+
+    
+}
+.navbar{ 
+    background-image: url(fundo.png); /*cria a barra no inicio*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+
+.acervo h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #006b5b;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    color: white;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        transparent
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.overlay p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #1e1b19; /*cria a barra no inicio*/
+    bottom: 0;       /* posiciona o elemento no fundo da janela */
+    left: 0;         /* encosta o elemento na lateral esquerda */
+    width: 100%;     /* faz a barra ocupar toda a largura da tela */
+    height: 60px;    /* define a altura da barra */
+    display: flex;            /* ativa flexbox para organizar o conteúdo */
+    justify-content: center;    /* centraliza na horizontal */
+    align-items: center;        /* centraliza na vertical */
+
+
+}
+
+.redessoci a {
+
+    /* Transforma o link em um bloco para aceitar padding e margens */
+        display: inline-block; 
+    /* Estilo visual */
+    background: linear-gradient(/*deixa um degrade de cores */
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+      );
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    border-radius: 4px;
+    font-family: "Staatliches", sans-serif;
+    align-items: center;
+
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.carrossel {
+    width: 700px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imagens {
+    display: flex;
+    transition: transform 0.8s ease;
+
+}
+
+.imagens img {
+    width: 800px;
+    height: 450px;
+    object-fit: cover;
+    flex-shrink: 0;
+
+}
