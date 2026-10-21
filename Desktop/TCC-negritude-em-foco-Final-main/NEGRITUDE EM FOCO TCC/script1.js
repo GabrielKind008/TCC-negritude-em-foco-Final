@@ -1,39 +1,26 @@
 const acontecimentos = [
 
     {
-        data: "1888",
-        titulo: "Lei Áurea",
-        texto: "Em 13 de maio de 1888, a Lei Áurea declarou extinta a escravidão no Brasil.",
-        imagem: "imagens/lei-aurea.jpg"
+        data: "2025",
+        titulo: "Britoskt",
+        texto: "Em 2025, nossos alunos receberam a visita especial do skatista e coordenador cultural Thales Brito (britoskt). Em um encontro dinâmico, ele compartilhou a história, os valores de superação do esporte e inspirou a garotada mostrando que o skate vai muito além das manobras: é arte, estilo de vida e comunidade.",
+        imagem: "skatista.png"
     },
 
     {
-        data: "1978",
-        titulo: "Movimento Negro Unificado",
-        texto: "Em 7 de julho de 1978, um ato público nas escadarias do Teatro Municipal de São Paulo marcou a apresentação pública do Movimento Negro Unificado.",
-        imagem: "imagens/movimento-negro.jpg"
+        data: "Atividade anual",
+        titulo: "Slam",
+        texto: "O Slam Poético da Escola Estadual Culto à Ciência é uma das atividades anuais mais vibrantes e tradicionais do colégio. O projeto leva a força da poesia falada, da identidade e da resistência urbana para dentro do ambiente de uma escola centenária e histórica em Campinas.",
+        imagem: "slam.png"
     },
 
     {
-        data: "2003",
-        titulo: "Lei 10.639",
-        texto: "A Lei 10.639 tornou obrigatório o ensino de História e Cultura Afro-Brasileira nas escolas.",
-        imagem: "imagens/lei-10639.jpg"
+        data: "Desde 2025",
+        titulo: "Escolha das eletivas.",
+        texto: "Elas servem para tirar o aprendizado dos livros e levá-lo para a prática por meio de oficinas e debates. É a sua oportunidade de explorar novas áreas profissionais, desenvolver talentos e assumir o protagonismo do seu próprio projeto de vida.",
+        imagem: "eletivas.png"
     },
 
-    {
-        data: "2011",
-        titulo: "Dia da Consciência Negra",
-        texto: "A Lei 12.519 instituiu oficialmente o Dia Nacional de Zumbi e da Consciência Negra, celebrado em 20 de novembro.",
-        imagem: "imagens/consciencia-negra.jpg"
-    },
-
-    {
-        data: "2023",
-        titulo: "Feriado Nacional",
-        texto: "A Lei 14.759 declarou o dia 20 de novembro como feriado nacional para a celebração do Dia Nacional de Zumbi e da Consciência Negra.",
-        imagem: "imagens/feriado.jpg"
-    }
 
 ];
 

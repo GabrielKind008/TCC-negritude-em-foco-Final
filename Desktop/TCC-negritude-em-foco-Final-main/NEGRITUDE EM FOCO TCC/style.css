@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;/*rologaem bonitinha*/
 }
 
+
 .body{
     width: 100%;
     overflow-x: hidden;
@@ -199,3 +200,6 @@ footer {
     font-size: 60px;
     font-weight: bold;
 }
+
+
+
